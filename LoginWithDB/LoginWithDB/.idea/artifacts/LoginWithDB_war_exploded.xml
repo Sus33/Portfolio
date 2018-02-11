@@ -1,0 +1,18 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="LoginWithDB:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/LoginWithDB_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="LoginWithDB/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="LoginWithDB" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="lib" />
+          <element id="library" level="project" name="annotations-api" />
+          <element id="library" level="project" name="Maven: mysql:mysql-connector-java:5.1.6" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
