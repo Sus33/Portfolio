@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin</title>
+</head>
+<body>
+<form action="#" th:action="@{/addCategory}" th:object="${addCategory}" method="get">
+    <input type="text" th:field="*{name}">
+    <input type="submit" value="add">
+</form>
+
+<form action="#" th:action="@{/ads}" th:object="${ads}" method="post" enctype="multipart/form-data">
+    <input type="text" th:field="*{name}">
+    <input type="text" th:field="*{description}">
+    <input type="text" th:field="*{price}">
+    <input type="date" th:field="*{date}">
+    <select name="category.id">
+        <option th:each="category : ${allCategories}" th:value="${category.id}" th:text="${category.name}"></option>
+    </select>
+    <input type="file" name="pic">
+    <input type="submit" value="Add">
+</form>
+
+</body>
+</html>

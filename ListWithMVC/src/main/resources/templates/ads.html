@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Ads</title>
+</head>
+<body>
+<ul>
+        <li th:each="ads : ${ads}" th:text="${ads.name}"></li>
+</ul>
+</body>
+</html>

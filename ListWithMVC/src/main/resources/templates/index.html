@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+<a href="/adminHome">Home</a>
+<ul>
+    <li th:each="c : ${allCategories}">
+        <a th:href="@{'/findId' + ${c.id}}" th:text="${c.name}"></a>
+    </li>
+</ul>
+</body>
+</html>
